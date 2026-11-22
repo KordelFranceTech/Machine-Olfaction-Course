@@ -1,0 +1,100 @@
+---
+---
+
+$base-font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$base-font-size: 17px;
+$base-line-height: 1.65;
+$text-color: #c0c0c0;
+$background-color: #000;
+$brand-color: #008b8b;
+$grey-color: #999;
+$grey-color-light: #333;
+$grey-color-dark: #c0c0c0;
+$content-width: 980px;
+
+@import "minima";
+
+// A dark reading surface with the supplied type, link, and code treatment.
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; background: #000; color: #c0c0c0; }
+.wrapper { max-width: 1040px; }
+main { min-width: 0; text-align: left; }
+h1, h2, h3, h4, h5, h6 { color: #fff; line-height: 1.3; }
+h1 { font-size: 2.1rem; }
+h2 { margin-top: 2.2rem; font-size: 1.55rem; }
+h3 { margin-top: 1.6rem; font-size: 1.2rem; }
+strong { color: #eee; }
+p, li { overflow-wrap: anywhere; }
+a, a:visited { color: #008b8b; text-decoration: underline; text-underline-offset: .17em; }
+a:hover { color: orange; }
+a:active { color: #008b8b; }
+a:focus-visible, summary:focus-visible { outline: 2px solid orange; outline-offset: 5px; border-radius: 2px; }
+[id] { scroll-margin-top: 24px; }
+hr { margin: 2rem 0; border: 0; border-top: 1px solid #444; }
+blockquote { color: #c0c0c0; border-left-color: #666; font-size: 1rem; font-style: normal; }
+img { max-width: 100%; height: auto; }
+
+.site-header { position: relative; z-index: 10; background: #000; border-top: 0; border-bottom: 1px solid #333; }
+.header-content { display: flex; align-items: center; gap: 20px; padding-top: 10px; padding-bottom: 10px; }
+.site-title, .site-title:visited { color: #fff; float: none; font-size: 1.2rem; line-height: 1.35; letter-spacing: 0; text-decoration: none; }
+.site-title:hover { color: orange; }
+.course-menu { flex-shrink: 0; }
+#hamburger { display: flex; align-items: center; gap: 8px; min-height: 44px; color: #fff; cursor: pointer; list-style: none; font-size: .9rem; }
+#hamburger::-webkit-details-marker { display: none; }
+.menu-icon { font-size: 1.8rem; line-height: 1; }
+.menu-close { display: none; }
+.course-menu[open] .menu-open { display: none; }
+.course-menu[open] .menu-close { display: inline; }
+#sidebar { position: absolute; top: 100%; left: 0; width: 250px; max-width: 100vw; max-height: calc(100vh - 80px); overflow-y: auto; padding: 1.25rem 1rem; background: #000; border: 1px solid #444; border-top: 0; box-shadow: 8px 10px 20px #0009; }
+#sidebar ul { list-style: none; margin: 0; padding: 0; }
+#sidebar li { margin: 0; }
+#sidebar a { display: block; min-height: 44px; padding: .55rem .8rem; color: #fff; text-decoration: none; }
+#sidebar a:hover, #sidebar a:focus-visible { color: orange; background: #151515; }
+#sidebar a[aria-current] { border-left: 2px solid #008b8b; background: #151515; }
+.skip-link { position: fixed; top: -100px; left: 1rem; z-index: 20; padding: .7rem 1rem; background: #000; }
+.skip-link:focus { top: .5rem; }
+
+.page-content { padding: 2rem 0; }
+.page-content details { margin: 1.2rem 0; padding: .8rem 1rem; border: 1px solid #333; border-radius: 6px; background: #0b0b0b; }
+.page-content summary { color: #eee; cursor: pointer; }
+.page-content details[open] summary { margin-bottom: .9rem; }
+.page-content details ul { margin-bottom: .5rem; }
+
+// Tables and code scroll inside their own region on smaller screens.
+table { display: block; width: 100%; overflow-x: auto; color: #c0c0c0; border-collapse: collapse; border: 1px solid #444; }
+table th, table td { padding: .65rem .8rem; border: 1px solid #444; text-align: left; }
+table th { color: #fff; background: #1b1b1b; }
+table tr:nth-child(even) { background: #111; }
+pre, code { background: #3b3b3b; color: #f8f8f8; border: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9rem; border-radius: 4px; }
+code { padding: .2em .4em; overflow-wrap: anywhere; }
+pre { padding: 1em; border-radius: 6px; overflow-x: auto; line-height: 1.55; }
+pre code { padding: 0; background: none; color: inherit; white-space: pre; overflow-wrap: normal; }
+.highlight, .highlighter-rouge .highlight { background: #3b3b3b; border-radius: 6px; }
+.highlight pre { margin-bottom: 1rem; }
+// Reset Minima's light-theme token colors before adding a legible dark palette.
+.highlight [class] { color: #f8f8f8; background: transparent; }
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cp, .highlight .cs { color: #c5c5c5; }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .ow { color: #b5d9ff; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sr, .highlight .ss { color: #b7e5b0; }
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #ffcc99; }
+.highlight .nb, .highlight .nc, .highlight .nd, .highlight .ne, .highlight .nf { color: #c9d8ff; }
+.highlight .err, .highlight .gd { color: #ffd1d1; }
+.highlight .gi { color: #b7e5b0; }
+
+.site-footer { position: static; background: #000; border-top: 1px solid #333; padding: 1.5rem 0; font-size: .9rem; }
+.site-footer p { margin: 0; }
+@media (max-width: 600px) {
+  .wrapper { padding-left: 18px; padding-right: 18px; }
+  .header-content { gap: 14px; }
+  .site-title { font-size: 1.05rem; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  .page-content { padding-top: 1.5rem; }
+  table th, table td { padding: .55rem; }
+}
+@media print {
+  .site-header, .site-footer, .skip-link { display: none; }
+  body, main, h1, h2, h3, h4, strong { background: #fff; color: #000; }
+  a, a:visited { color: #000; }
+  pre, code, .highlight, .highlighter-rouge .highlight, .highlight [class], table, table th, table td, table tr:nth-child(even) { color: #000; background: #fff; }
+}

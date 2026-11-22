@@ -1,0 +1,33 @@
+title: "Electrochemical sensing and machine olfaction"
+description: "A university engineering curriculum connecting molecules, electrochemistry, instrumentation, and machine olfaction."
+lang: en
+theme: minima
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+relative_links:
+  enabled: true
+  collections: false
+# GitHub Pages supplies the publishing URL. Set url/baseurl only for a custom host.
+navigation:
+  - title: Home
+    url: /
+  - title: Start
+    url: /getting-started.html
+  - title: Modules
+    url: /modules/
+  - title: Labs
+    url: /labs/
+  - title: Projects
+    url: /projects/
+  - title: Library
+    url: /references/
+  - title: Site map
+    url: /navigation.html
+sass:
+  style: compressed

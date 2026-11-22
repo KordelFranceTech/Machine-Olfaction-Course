@@ -27,6 +27,8 @@ The course is designed for senior undergraduate students, beginning graduate stu
 | [docs/glossary.md](docs/glossary.md) | Shared terminology across disciplines |
 | [docs/math-reference.md](docs/math-reference.md) | Equations, assumptions, units, and numerical sanity checks |
 | [docs/teaching-guide.md](docs/teaching-guide.md) | Instructor pacing and facilitation |
+| [docs/_config.yml](docs/_config.yml) | Minima theme, rendering, and menu settings |
+| [docs/assets/main.scss](docs/assets/main.scss) | Black background, Avenir typography, teal links, and dark code styling |
 | [PUBLISHING.md](PUBLISHING.md) | Local source structure and private GitHub Pages setup |
 | [EDITORIAL.md](EDITORIAL.md) | Content boundaries and maintenance practices |
 | [VALIDATION.md](VALIDATION.md) | Completed checks and verification limits |
@@ -35,7 +37,7 @@ The course is designed for senior undergraduate students, beginning graduate stu
 
 Each module moves from an intuitive question to an explicit model, then tests where that model fails. Exercises ask for numerical answers and an explanation of whether the answer is meaningful. Experimental and clinical results are attributed to their original public sources. Teaching examples use invented parameters and are labeled accordingly; they are not measurements from a commercial device.
 
-All new deliverables are Markdown. Code and data needed for the introductory labs appear inside Markdown code blocks and tables. Equations use text notation that remains legible without a JavaScript mathematics renderer. Navigation uses relative Markdown links, suitable for reading in a repository and for conversion by GitHub Pages. Every learner page has a common menu, breadcrumbs where applicable, and return links. Long pages have collapsible contents; modules, labs, and project lessons have previous/next links. The module, lab, project, and library hubs support both sequential study and topic browsing.
+All curriculum and maintainer documents are Markdown. Four support files enable the requested Minima theme: `docs/_config.yml`, `docs/assets/main.scss`, and header/footer includes in `docs/_includes/`. Code and data needed for the introductory labs appear inside Markdown code blocks and tables. Equations use text notation that remains legible without a JavaScript mathematics renderer. Navigation uses relative Markdown links, suitable for reading in a repository and for conversion by GitHub Pages. Every learner page has a common menu, breadcrumbs where applicable, and return links. Long pages have collapsible contents; modules, labs, and project lessons have previous/next links. The module, lab, project, and library hubs support both sequential study and topic browsing.
 
 ## Publication boundary
 
