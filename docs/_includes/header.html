@@ -1,0 +1,20 @@
+<a class="skip-link" href="#page-top">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="wrapper header-content">
+    <details class="course-menu">
+      <summary id="hamburger">
+        <span aria-hidden="true" class="menu-icon">☰</span>
+        <span class="menu-open">Menu</span><span class="menu-close">Close</span>
+      </summary>
+      <nav id="sidebar" aria-label="Course sections">
+        <ul>
+          {% assign current_url = page.url | replace: 'index.html', '' %}
+          {% for item in site.navigation %}
+          <li><a href="{{ item.url | relative_url }}"{% if current_url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </details>
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">Electrochemical sensing</a>
+  </div>
+</header>
