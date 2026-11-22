@@ -1,5 +1,8 @@
 # Electrochemical sensing and machine olfaction
 
+Access the course site here: https://kordelfrancetech.github.io/Machine-Olfaction-Course/
+
+
 A university-level engineering curriculum that follows a molecule from its environment through sampling, interfacial chemistry, electrical measurement, statistical inference, and a defensible decision.
 
 **Start with the [course home](docs/index.md), [module directory](docs/modules/index.md), or [site map](docs/navigation.md).**
